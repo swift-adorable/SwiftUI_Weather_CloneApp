@@ -12,6 +12,7 @@ struct SwiftUI_Weather_CloneApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
+                .preferredColorScheme(.dark)
         }
     }
 }
