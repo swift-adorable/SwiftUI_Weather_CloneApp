@@ -18,6 +18,8 @@
 		D0BAC9E92B5E24EB00A4BEF4 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9E82B5E24EB00A4BEF4 /* CurrentWeather.swift */; };
 		D0BAC9EB2B5E25D500A4BEF4 /* Double+TemperatureString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9EA2B5E25D500A4BEF4 /* Double+TemperatureString.swift */; };
 		D0BAC9ED2B5E26BC00A4BEF4 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9EC2B5E26BC00A4BEF4 /* Forecast.swift */; };
+		D0D923D62B686C4F005A4FFD /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D923D52B686C4F005A4FFD /* WeatherService.swift */; };
+		D0D923D82B686D6E005A4FFD /* WeatherService+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D923D72B686D6E005A4FFD /* WeatherService+Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		D0BAC9E82B5E24EB00A4BEF4 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		D0BAC9EA2B5E25D500A4BEF4 /* Double+TemperatureString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+TemperatureString.swift"; sourceTree = "<group>"; };
 		D0BAC9EC2B5E26BC00A4BEF4 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		D0D923D52B686C4F005A4FFD /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		D0D923D72B686D6E005A4FFD /* WeatherService+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+Location.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		D0BAC9E32B5E0A2300A4BEF4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				D0D923D52B686C4F005A4FFD /* WeatherService.swift */,
+				D0D923D72B686D6E005A4FFD /* WeatherService+Location.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -190,12 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D923D62B686C4F005A4FFD /* WeatherService.swift in Sources */,
 				D0AFD7DD2B608F6B004D77BD /* WeatherContentView.swift in Sources */,
 				D0AFD7DF2B609014004D77BD /* CurrentWeatherView.swift in Sources */,
 				D0AFD7DB2B608F22004D77BD /* BackgroundView.swift in Sources */,
 				D0BAC9EB2B5E25D500A4BEF4 /* Double+TemperatureString.swift in Sources */,
 				D0BAC9CC2B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp.swift in Sources */,
 				D0AFD7E12B609043004D77BD /* ForecastView.swift in Sources */,
+				D0D923D82B686D6E005A4FFD /* WeatherService+Location.swift in Sources */,
 				D0BAC9E92B5E24EB00A4BEF4 /* CurrentWeather.swift in Sources */,
 				D0BAC9E72B5E224B00A4BEF4 /* MainView.swift in Sources */,
 				D0BAC9ED2B5E26BC00A4BEF4 /* Forecast.swift in Sources */,
