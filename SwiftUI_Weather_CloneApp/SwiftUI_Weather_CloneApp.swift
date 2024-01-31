@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUI_Weather_CloneApp: App {
+    let service = WeatherService()
+    
     var body: some Scene {
         WindowGroup {
             MainView()
                 .preferredColorScheme(.dark)
+                .environmentObject(service)
         }
     }
 }
