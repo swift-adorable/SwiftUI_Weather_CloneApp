@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0AFCFDB2B6B167100CA23DA /* String+WeatherSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFCFDA2B6B167100CA23DA /* String+WeatherSymbol.swift */; };
 		D0AFD7DB2B608F22004D77BD /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD7DA2B608F22004D77BD /* BackgroundView.swift */; };
 		D0AFD7DD2B608F6B004D77BD /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD7DC2B608F6B004D77BD /* WeatherContentView.swift */; };
 		D0AFD7DF2B609014004D77BD /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD7DE2B609014004D77BD /* CurrentWeatherView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0AFCFDA2B6B167100CA23DA /* String+WeatherSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+WeatherSymbol.swift"; sourceTree = "<group>"; };
 		D0AFD7DA2B608F22004D77BD /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		D0AFD7DC2B608F6B004D77BD /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		D0AFD7DE2B609014004D77BD /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D0BAC9EA2B5E25D500A4BEF4 /* Double+TemperatureString.swift */,
+				D0AFCFDA2B6B167100CA23DA /* String+WeatherSymbol.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D923D62B686C4F005A4FFD /* WeatherService.swift in Sources */,
+				D0AFCFDB2B6B167100CA23DA /* String+WeatherSymbol.swift in Sources */,
 				D0AFD7DD2B608F6B004D77BD /* WeatherContentView.swift in Sources */,
 				D0AFD7DF2B609014004D77BD /* CurrentWeatherView.swift in Sources */,
 				D0AFD7DB2B608F22004D77BD /* BackgroundView.swift in Sources */,
