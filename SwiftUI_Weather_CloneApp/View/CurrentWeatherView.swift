@@ -17,6 +17,7 @@ struct CurrentWeatherView: View {
             if let model = model {
                 HStack {
                     Image(systemName: model.icon)
+                        .symbolRenderingMode(.multicolor)
                     Text(model.weather)
                 }
                 .font(.largeTitle)
