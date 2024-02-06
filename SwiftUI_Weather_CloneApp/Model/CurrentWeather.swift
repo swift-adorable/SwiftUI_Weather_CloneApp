@@ -29,4 +29,22 @@ extension CurrentWeather {
                               sunset: "오후 05:27",
                               forecatedDate: .now)
     }
+    
+    init?(data: CodableCurrentWeather) {
+        guard let weatherInfo = data.weather.first else { return nil }
+        icon = weatherInfo.icon.weatherImageName
+        
+        weather = weatherInfo.description
+        temperature = data.main.temp.temperatureString
+        minTemperature = data.main.temp_min.temperatureString
+        maxTemperature = data.main.temp_max.temperatureString
+        
+        var date = Date(timeIntervalSince1970: data.sys.sunrise)
+        sunrise = date.formatted(.dateTime.hour().minute())
+        
+        date = Date(timeIntervalSince1970: data.sys.sunset)
+        sunset = date.formatted(.dateTime.hour().minute())
+        
+        forecatedDate = Date(timeIntervalSince1970: data.dt)
+    }
 }

@@ -42,6 +42,7 @@ extension WeatherService: CLLocationManagerDelegate {
         
         Task {
             currentLocation = try await updateAddress(from: location)
+            await fetchWeather(location: location)
         }
     }
     
