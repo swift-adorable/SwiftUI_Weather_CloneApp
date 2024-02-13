@@ -10,10 +10,10 @@ import CoreLocation
 
 extension WeatherService: CLLocationManagerDelegate {
     
+    @MainActor
     private func updateAddress(from location: CLLocation) async throws -> String {
         let geocoder = CLGeocoder()
         let placemarks = try await geocoder.reverseGeocodeLocation(location, preferredLocale: Locale(identifier: "Ko_kr"))
-        
         guard let placemark = placemarks.first else { return "???" }
         
         guard let gu = placemark.locality, let dong = placemark.subLocality else {
@@ -30,10 +30,13 @@ extension WeatherService: CLLocationManagerDelegate {
             locationManager.requestLocation()
         case .notDetermined:
             lastError = "위치 서비스 사용 권한을 확인할 수 없습니다."
+            updating = false
         case .denied, .restricted:
             lastError = "위치 서비스 사용 권한이 없습니다."
+            updating = false
         default:
             lastError = "알 수 없는 오류가 발생했습니다."
+            updating = false
         }
     }
     
@@ -41,8 +44,15 @@ extension WeatherService: CLLocationManagerDelegate {
         guard isPreviewServiece == false else { return }
         
         Task {
-            currentLocation = try await updateAddress(from: location)
+            let updatedLocation = try await updateAddress(from: location)
             await fetchWeather(location: location)
+            
+            await MainActor.run {
+                currentLocation = updatedLocation
+                
+                updating = false
+            }
+            
         }
     }
     
@@ -56,5 +66,7 @@ extension WeatherService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         manager.stopUpdatingLocation()
         lastError = error.localizedDescription
+        updating = false
     }
+    
 }

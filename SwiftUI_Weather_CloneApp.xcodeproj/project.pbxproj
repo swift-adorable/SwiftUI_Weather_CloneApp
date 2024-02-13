@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D098727F2B74521500858348 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D098727E2B74521500858348 /* ErrorView.swift */; };
 		D0A3F4A52B71EC3A0006EE8A /* CodableCurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F4A42B71EC3A0006EE8A /* CodableCurrentWeather.swift */; };
 		D0A3F4A72B71ED020006EE8A /* WeatherService+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F4A62B71ED020006EE8A /* WeatherService+API.swift */; };
 		D0A3F4A92B71EE020006EE8A /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A3F4A82B71EE020006EE8A /* ApiError.swift */; };
@@ -16,6 +17,19 @@
 		D0AFD7DD2B608F6B004D77BD /* WeatherContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD7DC2B608F6B004D77BD /* WeatherContentView.swift */; };
 		D0AFD7DF2B609014004D77BD /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD7DE2B609014004D77BD /* CurrentWeatherView.swift */; };
 		D0AFD7E12B609043004D77BD /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AFD7E02B609043004D77BD /* ForecastView.swift */; };
+		D0B63AEC2B7AE3DE003FF539 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B63AEB2B7AE3DE003FF539 /* WidgetKit.framework */; };
+		D0B63AEE2B7AE3DE003FF539 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B63AED2B7AE3DE003FF539 /* SwiftUI.framework */; };
+		D0B63AF12B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63AF02B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetBundle.swift */; };
+		D0B63AF32B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63AF22B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetLiveActivity.swift */; };
+		D0B63AF52B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63AF42B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget.swift */; };
+		D0B63AF72B7AE3DF003FF539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0B63AF62B7AE3DF003FF539 /* Assets.xcassets */; };
+		D0B63AFB2B7AE3DF003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0B63AE92B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0B63B032B7AE455003FF539 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63B022B7AE455003FF539 /* WidgetData.swift */; };
+		D0B63B042B7AE466003FF539 /* WidgetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63B022B7AE455003FF539 /* WidgetData.swift */; };
+		D0B63B082B7AE55B003FF539 /* WeatherEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63B062B7AE559003FF539 /* WeatherEntry.swift */; };
+		D0B63B0A2B7AE5CC003FF539 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63B092B7AE5CC003FF539 /* Provider.swift */; };
+		D0B63B0D2B7AE6C1003FF539 /* WeatherEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B63B0C2B7AE6C1003FF539 /* WeatherEntryView.swift */; };
+		D0B63B0E2B7AE783003FF539 /* Double+TemperatureString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9EA2B5E25D500A4BEF4 /* Double+TemperatureString.swift */; };
 		D0BAC9CC2B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9CB2B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp.swift */; };
 		D0BAC9D02B5DFBBF00A4BEF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BAC9CF2B5DFBBF00A4BEF4 /* Assets.xcassets */; };
 		D0BAC9D32B5DFBBF00A4BEF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BAC9D22B5DFBBF00A4BEF4 /* Preview Assets.xcassets */; };
@@ -27,7 +41,32 @@
 		D0D923D82B686D6E005A4FFD /* WeatherService+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D923D72B686D6E005A4FFD /* WeatherService+Location.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D0B63AF92B7AE3DF003FF539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0BAC9C02B5DFBBE00A4BEF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0B63AE82B7AE3DE003FF539;
+			remoteInfo = SwiftUI_Weather_CloneApp_WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0B63AFC2B7AE3DF003FF539 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0B63AFB2B7AE3DF003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		D098727E2B74521500858348 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		D0A3F4A42B71EC3A0006EE8A /* CodableCurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCurrentWeather.swift; sourceTree = "<group>"; };
 		D0A3F4A62B71ED020006EE8A /* WeatherService+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherService+API.swift"; sourceTree = "<group>"; };
 		D0A3F4A82B71EE020006EE8A /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
@@ -37,6 +76,18 @@
 		D0AFD7DC2B608F6B004D77BD /* WeatherContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherContentView.swift; sourceTree = "<group>"; };
 		D0AFD7DE2B609014004D77BD /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
 		D0AFD7E02B609043004D77BD /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
+		D0B63AE92B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftUI_Weather_CloneApp_WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0B63AEB2B7AE3DE003FF539 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		D0B63AED2B7AE3DE003FF539 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		D0B63AF02B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Weather_CloneApp_WidgetBundle.swift; sourceTree = "<group>"; };
+		D0B63AF22B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Weather_CloneApp_WidgetLiveActivity.swift; sourceTree = "<group>"; };
+		D0B63AF42B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Weather_CloneApp_Widget.swift; sourceTree = "<group>"; };
+		D0B63AF62B7AE3DF003FF539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0B63AF82B7AE3DF003FF539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0B63B022B7AE455003FF539 /* WidgetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetData.swift; sourceTree = "<group>"; };
+		D0B63B062B7AE559003FF539 /* WeatherEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntry.swift; sourceTree = "<group>"; };
+		D0B63B092B7AE5CC003FF539 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		D0B63B0C2B7AE6C1003FF539 /* WeatherEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEntryView.swift; sourceTree = "<group>"; };
 		D0BAC9C82B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Weather_CloneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BAC9CB2B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Weather_CloneApp.swift; sourceTree = "<group>"; };
 		D0BAC9CF2B5DFBBF00A4BEF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +102,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D0B63AE62B7AE3DE003FF539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B63AEE2B7AE3DE003FF539 /* SwiftUI.framework in Frameworks */,
+				D0B63AEC2B7AE3DE003FF539 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0BAC9C52B5DFBBE00A4BEF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,14 +127,57 @@
 				D0A3F4A42B71EC3A0006EE8A /* CodableCurrentWeather.swift */,
 				D0A66DED2B72F93B0049BCBD /* CodableForecast.swift */,
 				D0A3F4A82B71EE020006EE8A /* ApiError.swift */,
+				D0B63B022B7AE455003FF539 /* WidgetData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D0B63AEA2B7AE3DE003FF539 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B63AEB2B7AE3DE003FF539 /* WidgetKit.framework */,
+				D0B63AED2B7AE3DE003FF539 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0B63AEF2B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget */ = {
+			isa = PBXGroup;
+			children = (
+				D0B63B0B2B7AE6A7003FF539 /* View */,
+				D0B63B052B7AE54C003FF539 /* Model */,
+				D0B63AF02B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetBundle.swift */,
+				D0B63AF22B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetLiveActivity.swift */,
+				D0B63AF42B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget.swift */,
+				D0B63B092B7AE5CC003FF539 /* Provider.swift */,
+				D0B63AF62B7AE3DF003FF539 /* Assets.xcassets */,
+				D0B63AF82B7AE3DF003FF539 /* Info.plist */,
+			);
+			path = SwiftUI_Weather_CloneApp_Widget;
+			sourceTree = "<group>";
+		};
+		D0B63B052B7AE54C003FF539 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0B63B062B7AE559003FF539 /* WeatherEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0B63B0B2B7AE6A7003FF539 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0B63B0C2B7AE6C1003FF539 /* WeatherEntryView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D0BAC9BF2B5DFBBE00A4BEF4 = {
 			isa = PBXGroup;
 			children = (
 				D0BAC9CA2B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp */,
+				D0B63AEF2B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget */,
+				D0B63AEA2B7AE3DE003FF539 /* Frameworks */,
 				D0BAC9C92B5DFBBE00A4BEF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				D0BAC9C82B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp.app */,
+				D0B63AE92B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +251,7 @@
 				D0AFD7DC2B608F6B004D77BD /* WeatherContentView.swift */,
 				D0AFD7DE2B609014004D77BD /* CurrentWeatherView.swift */,
 				D0AFD7E02B609043004D77BD /* ForecastView.swift */,
+				D098727E2B74521500858348 /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +259,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D0B63AE82B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0B63AFF2B7AE3DF003FF539 /* Build configuration list for PBXNativeTarget "SwiftUI_Weather_CloneApp_WidgetExtension" */;
+			buildPhases = (
+				D0B63AE52B7AE3DE003FF539 /* Sources */,
+				D0B63AE62B7AE3DE003FF539 /* Frameworks */,
+				D0B63AE72B7AE3DE003FF539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUI_Weather_CloneApp_WidgetExtension;
+			productName = SwiftUI_Weather_CloneApp_WidgetExtension;
+			productReference = D0B63AE92B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D0BAC9C72B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0BAC9D62B5DFBBF00A4BEF4 /* Build configuration list for PBXNativeTarget "SwiftUI_Weather_CloneApp" */;
@@ -161,10 +283,12 @@
 				D0BAC9C42B5DFBBE00A4BEF4 /* Sources */,
 				D0BAC9C52B5DFBBE00A4BEF4 /* Frameworks */,
 				D0BAC9C62B5DFBBE00A4BEF4 /* Resources */,
+				D0B63AFC2B7AE3DF003FF539 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D0B63AFA2B7AE3DF003FF539 /* PBXTargetDependency */,
 			);
 			name = SwiftUI_Weather_CloneApp;
 			productName = SwiftUI_Weather_CloneApp;
@@ -181,6 +305,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					D0B63AE82B7AE3DE003FF539 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					D0BAC9C72B5DFBBE00A4BEF4 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -200,11 +327,20 @@
 			projectRoot = "";
 			targets = (
 				D0BAC9C72B5DFBBE00A4BEF4 /* SwiftUI_Weather_CloneApp */,
+				D0B63AE82B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D0B63AE72B7AE3DE003FF539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B63AF72B7AE3DF003FF539 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0BAC9C62B5DFBBE00A4BEF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,14 +353,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D0B63AE52B7AE3DE003FF539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0B63AF12B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetBundle.swift in Sources */,
+				D0B63B0D2B7AE6C1003FF539 /* WeatherEntryView.swift in Sources */,
+				D0B63B042B7AE466003FF539 /* WidgetData.swift in Sources */,
+				D0B63AF32B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetLiveActivity.swift in Sources */,
+				D0B63B0E2B7AE783003FF539 /* Double+TemperatureString.swift in Sources */,
+				D0B63AF52B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_Widget.swift in Sources */,
+				D0B63B0A2B7AE5CC003FF539 /* Provider.swift in Sources */,
+				D0B63B082B7AE55B003FF539 /* WeatherEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D0BAC9C42B5DFBBE00A4BEF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D0D923D62B686C4F005A4FFD /* WeatherService.swift in Sources */,
+				D0B63B032B7AE455003FF539 /* WidgetData.swift in Sources */,
 				D0A66DEE2B72F93B0049BCBD /* CodableForecast.swift in Sources */,
 				D0A3F4A52B71EC3A0006EE8A /* CodableCurrentWeather.swift in Sources */,
 				D0AFCFDB2B6B167100CA23DA /* String+WeatherSymbol.swift in Sources */,
+				D098727F2B74521500858348 /* ErrorView.swift in Sources */,
 				D0AFD7DD2B608F6B004D77BD /* WeatherContentView.swift in Sources */,
 				D0AFD7DF2B609014004D77BD /* CurrentWeatherView.swift in Sources */,
 				D0AFD7DB2B608F22004D77BD /* BackgroundView.swift in Sources */,
@@ -242,7 +395,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D0B63AFA2B7AE3DF003FF539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0B63AE82B7AE3DE003FF539 /* SwiftUI_Weather_CloneApp_WidgetExtension */;
+			targetProxy = D0B63AF92B7AE3DF003FF539 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		D0B63AFD2B7AE3DF003FF539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QMB27NV87J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUI_Weather_CloneApp_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftUI_Weather_CloneApp_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sensei.lee.SwiftUI-Weather-CloneApp.SwiftUI-Weather-CloneApp-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0B63AFE2B7AE3DF003FF539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QMB27NV87J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUI_Weather_CloneApp_Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SwiftUI_Weather_CloneApp_Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sensei.lee.SwiftUI-Weather-CloneApp.SwiftUI-Weather-CloneApp-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D0BAC9D42B5DFBBF00A4BEF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -365,6 +580,7 @@
 		D0BAC9D72B5DFBBF00A4BEF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +612,7 @@
 		D0BAC9D82B5DFBBF00A4BEF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -427,6 +644,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D0B63AFF2B7AE3DF003FF539 /* Build configuration list for PBXNativeTarget "SwiftUI_Weather_CloneApp_WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0B63AFD2B7AE3DF003FF539 /* Debug */,
+				D0B63AFE2B7AE3DF003FF539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D0BAC9C32B5DFBBE00A4BEF4 /* Build configuration list for PBXProject "SwiftUI_Weather_CloneApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
