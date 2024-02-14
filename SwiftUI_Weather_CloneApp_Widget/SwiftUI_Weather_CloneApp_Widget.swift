@@ -21,15 +21,14 @@ struct SwiftUI_Weather_CloneApp_Widget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-//            if #available(iOS 17.0, *) {
-//                SwiftUI_Weather_CloneApp_WidgetEntryView(entry: entry)
-//                    .containerBackground(.fill.tertiary, for: .widget)
-//            } else {
-//                SwiftUI_Weather_CloneApp_WidgetEntryView(entry: entry)
-//                    .padding()
-//                    .background()
-//            }
-            WeatherEntryView(entry: entry)
+            if #available(iOS 17.0, *) {
+                WeatherEntryView(entry: entry)
+                    .containerBackground(for: .widget) {
+                        Color.black
+                    }
+            } else {
+                WeatherEntryView(entry: entry)
+            }
         }
         .configurationDisplayName("Weather Widget")
         .description("Check the current weather.")
