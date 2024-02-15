@@ -14,12 +14,22 @@ struct Provider: TimelineProvider {
     }
 
     func getSnapshot(in context: Context, completion: @escaping (WeatherEntry) -> ()) {
-        let entry = WeatherEntry(widgetData: .preview)
+        
+        var data = WidgetData.preview
+        
+        if context.isPreview == false {
+            let list = WidgetData.read()
+            if list.isEmpty == false  {
+                data = list[0]
+            }
+        }
+        
+        let entry = WeatherEntry(widgetData: data)
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<WeatherEntry>) -> ()) {
-        let entries = [WeatherEntry(widgetData: .preview)]
+        let entries = WidgetData.read().map { WeatherEntry(widgetData: $0) }
         
         let timeline = Timeline<WeatherEntry>(entries: entries, policy: .atEnd)
         completion(timeline)

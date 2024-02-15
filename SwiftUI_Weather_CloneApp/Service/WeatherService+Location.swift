@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreLocation
+import WidgetKit
 
 extension WeatherService: CLLocationManagerDelegate {
     
@@ -27,7 +28,7 @@ extension WeatherService: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         switch manager.authorizationStatus {
         case .authorizedAlways, .authorizedWhenInUse:
-            locationManager.requestLocation()
+            locationManager.startUpdatingLocation()
         case .notDetermined:
             lastError = "위치 서비스 사용 권한을 확인할 수 없습니다."
             updating = false
@@ -50,6 +51,9 @@ extension WeatherService: CLLocationManagerDelegate {
             await MainActor.run {
                 currentLocation = updatedLocation
                 
+                WidgetData.write(location: currentLocation, currentWeather: currentWeather, forecast: forecastList)
+                WidgetCenter.shared.reloadAllTimelines()
+                
                 updating = false
             }
             
@@ -60,11 +64,11 @@ extension WeatherService: CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         process(location: location)
         
-        manager.stopUpdatingLocation()
+        //manager.stopUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        manager.stopUpdatingLocation()
+        //manager.stopUpdatingLocation()
         lastError = error.localizedDescription
         updating = false
     }
